@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="ipad9_7" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Zsh-DU-nLI"/>
+                        <viewControllerLayoutGuide type="bottom" id="YMx-rO-uMX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="ihI-G4-Qre">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <color key="backgroundColor" red="1" green="0.82595533129999998" blue="0.1691934168" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="585" verticalHuggingPriority="585" insetsLayoutMarginsFromSafeArea="NO" image="SmileyGamer_Logo" translatesAutoresizingMaskIntoConstraints="NO" id="CGY-sv-COX">
+                                <rect key="frame" x="167" y="246" width="434" height="434"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="434" id="1y6-CP-wYT">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="272"/>
+                                    </constraint>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="434" id="dGa-Ej-YgH">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="272"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" secondItem="CGY-sv-COX" secondAttribute="height" multiplier="1:1" id="q3s-Cx-NuJ"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.82595533129999998" blue="0.1691934168" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="1" green="0.82595533129999998" blue="0.1691934168" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ihI-G4-Qre" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="3DO-Rj-9x8"/>
+                            <constraint firstItem="ihI-G4-Qre" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="6jC-hd-RDa"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="CGY-sv-COX" secondAttribute="trailing" constant="71" id="GHo-LX-t8o"/>
+                            <constraint firstItem="CGY-sv-COX" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-49" id="M32-rz-ytS">
+                                <variation key="heightClass=regular-widthClass=compact" constant="-35"/>
+                            </constraint>
+                            <constraint firstItem="ihI-G4-Qre" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="T5y-VD-NPN"/>
+                            <constraint firstItem="CGY-sv-COX" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="71" id="UsC-56-M5c"/>
+                            <constraint firstItem="ihI-G4-Qre" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="ZbS-Z0-hwh"/>
+                            <constraint firstItem="CGY-sv-COX" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="czE-VA-eWO"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="42.1875" y="370.8984375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Background" width="1536" height="2048"/>
+        <image name="SmileyGamer_Logo" width="872" height="872"/>
+    </resources>
+</document>
